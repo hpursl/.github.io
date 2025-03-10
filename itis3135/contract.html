@@ -4,68 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hayden Pursley's Handsome Penguin! 𒉭 ITIS 3135 𒉭 Contract</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        button{
-            color: #333; 
-        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Playfair Display', serif;
             color: #333;
-            margin: 20px;
+            margin: 0;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        header {
-            font-family: Serif;
-            background-color: #445b72;
-            color: black;
-            padding: 10px 0;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title-box, .content-box {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
             text-align: center;
+            font-size: 1.5em;
         }
-        main {
-            margin: 20px 0;
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+        }
+        .small-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(51, 51, 51, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.3em;
+        }
+        .small-box a {
+            color: #0073e6;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .small-box a:hover {
+            text-decoration: underline;
         }
         footer {
             background-color: #333;
-            color: #fff;
+            color: white;
             text-align: center;
-            padding: 10px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            font-size: 1.3em;
         }
         nav a {
             color: #0073e6;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 20px;
         }
         nav a:hover {
             text-decoration: underline;
         }
-        .centered-links {
-            text-align: center;
-            margin: 20px 0;
+        @media (max-width: 600px) {
+            .container {
+                align-items: center;
+            }
+            .small-box a {
+                display: block;
+                margin: 10px 0;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-    <h1>Hayden Pursley's Handsome Penguin! 𒉭 ITIS 3135 𒉭 Contract</h1>
-    </header>
-    <div class="centered-links"> 
-        <a href="introduction.html">Introduction</a> ||
-        <a href="index.html">Home</a>
+    <div class="small-box">
+        <a href="index.html" style="color: #4f5963;">Home</a>
+        <a href="introduction.html" style="color: #4f5963;">Introduction</a>
     </div>
-    <main>
-        <h2>Contract For Class</h2>
-        <p>I, HAYDEN C. PURSLEY agree to abide by the terms of the course contract in my SEMESTER 2025, ITIS3135, Web-based Application and Design and Development with my instructor, Professor D.I. von Briesen. I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.</p>
-        <div></div>
-        <p>Signed: <i>Hayden C. Pursley</i>, 02/15/2025</p>
-        <div></div>
-    </main>
+    <div class="container">
+        <div class="title-box">
+            <h1>Hayden Pursley's Handsome Penguin! 𒉭 ITIS 3135 𒉭 Contract</h1>
+        </div>
+        <div class="content-box">
+            <h2>Contract For Class</h2>
+            <p>I, HAYDEN C. PURSLEY, agree to abide by the terms of the course contract for SEMESTER 2025, ITIS 3135, Web-based Application and Design and Development with my instructor, Professor D.I. von Briesen. I understand that all work done on publicly available online tools will be available to the world, and I will not post information that is inappropriate for schoolwork or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class. Therefore, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class, it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn and will not cut and paste code except where I have properly given credit (i.e., external libraries) and never from my classmates.</p>
+            <p>Signed: <i>Hayden C. Pursley</i>, 02/15/2025</p>
+        </div>
+    </div>
     <footer>
         <nav>
-        <a href="https://www.linkedin.com/in/hayden-pursley-711512348/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/hpursl" target="_blank">GitHub</a>
-        <a href="https://hpursl.github.io/.github.io/" target="_blank">GitHub Pages</a>
-        <a href="https://webpages.charlotte.edu/hpursle1/">CLT Web</a>
+            <a href="https://www.linkedin.com/in/hayden-pursley-711512348/" target="_blank">LinkedIn</a> ||
+            <a href="https://github.com/hpursl" target="_blank">GitHub</a> ||
+            <a href="https://hpursl.github.io/.github.io/" target="_blank">GitHub Pages</a> ||
+            <a href="https://webpages.charlotte.edu/hpursle1/">CLT Web</a>
         </nav>
         <p>&copy; 2025 Hayden Pursley</p>
     </footer>

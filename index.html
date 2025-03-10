@@ -4,127 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hayden Pursley's Charlotte Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: #333;
             margin: 0;
-            background-image: url("https://i.postimg.cc/WpnN8fZW/68714690528-CB7-F9-E35-5-D1-A-4119-9556-D050-F4-CC5-EB3.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            height: 200vh;
+            background: linear-gradient(135deg, #a1a8a8 0%, #1c1c1d 100%);
+            height: 100vh;
             display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
             box-sizing: border-box;
-            overflow: auto;
+            overflow: hidden;
         }
-        .content {
-            position: relative;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 100%;
-            margin-top: 20px;
+        .top-bar, .bottom-bar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
         }
-        .symbol {
-            position: absolute;
-            font-size: 17px;
-            color: #333;
-            padding: 0px;
-        }
-        .top-left {
-            top: 10px;
-            left: 10px;
-        }
-        .top-right {
-            top: 10px;
-            right: 10px;
-        }
-        .bottom-left {
-            bottom: 10px;
-            left: 10px;
-        }
-        .bottom-right {
-            bottom: 10px;
-            right: 10px;
+        .transparent-bar {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 10px 20px;
+            text-align: center;
         }
         nav a {
-            color: #0073e6;
+            color: #4f5963;
             text-decoration: none;
             margin: 0 10px;
         }
         nav a:hover {
             text-decoration: underline;
         }
-        .text-bubble {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 14px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        .message-box {
-            position: fixed;
-            bottom: 60px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(255, 255, 255, 0.8);
-            color: #333;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 14px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
         @media (max-width: 600px) {
-            .content {
-                padding: 10px;
-                font-size: 14px;
-            }
             nav a {
                 display: block;
                 margin: 5px 0;
-            }
-            .text-bubble,
-            .message-box {
-                font-size: 12px;
-                padding: 5px 10px;
-            }
-        }
-        @media (min-width: 1200px) {
-            .content {
-                max-width: 60%;
             }
         }
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="content">
-        <div class="symbol top-left">𒉭</div>
-        <div class="symbol top-right">𒉭</div>
-        <div class="symbol bottom-left">𒉭</div>
-        <div class="symbol bottom-right">𒉭</div>
+    <div class="top-bar">
         <h1>Hayden Pursley's Charlotte Webpage</h1>
+    </div>
+    <div class="transparent-bar">
         <h2>Thanks for stopping by!</h2>
         <p>Take a look around.</p>
-        <p>Click <a href="itis3135/">here</a> to go to my ITIS3135 course.</p>
+        <p>Click <a href="itis3135/" style="color: #0073e6;">here</a> to go to my ITIS3135 course.</p>
+    </div>
+    <div class="bottom-bar">
         <nav>
-            <a href="https://www.linkedin.com/in/hayden-pursley-711512348/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/hayden-pursley-711512348/" target="_blank">LinkedIn</a> ||
             <a href="https://github.com/hpursl" target="_blank">GitHub</a>
-            <a href="https://hpursl.github.io/.github.io/" target="_blank">GitHub Pages</a>
         </nav>
         <p>&copy; 2025 Hayden Pursley</p>
     </div>
-    <div class="text-bubble">Taken by: Hayden Pursley, October 10, 2022, 22:08</div>
 </body>
 </html>
