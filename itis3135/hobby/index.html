@@ -6,7 +6,6 @@
     <title>Button Smasher</title>
     <link rel="icon" href="images/favicon.png" type="image/png">
     <style>
-        /* Embedded Stylesheet */
         body {
             font-family: "Roboto", sans-serif;
             background-color: #1e1e1e;
@@ -56,7 +55,7 @@
             background-color: #2c2c2c;
         }
 
-        section.active {
+        .active {
             display: block;
         }
         
@@ -67,7 +66,6 @@
             background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
             color: #fff;
             text-align: center;
-            padding: 10px;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
         }
 
@@ -201,9 +199,8 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             margin: 20px 0;
         }
-
-
     </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -224,20 +221,24 @@
                 <figcaption>My trusty setup!</figcaption>
             </figure>
             <p><em><b><i><u>My Desktop Specs (Custom Build):</u></i></b></em></p>
-            <li><b><i>Display:</b><i> 2560 x 1440 x 144 hertz
-            <li><b><i>Ram:</b><i> 32 GB</li>
-            <li><b><i>Storage:</b><i> 2 TB SSD x 2</li>
-            <li><b><i>Processor:</b><i> </li> 
-            <li><b><i>GPU:</b><i> NVIDIA® GeForce RTX™ 3060</li>
-            <li><b><i>Audio (IEMS):</b><i>Fanmusic TRUTHEAR x Crinacle Zero</li>
-            <li><b><i>Keyboard:</b><i>Womier K87</li>
-            <li><b><i>Mouse:</b><i> PRO X SUPERLIGHT 2 DEX </li>
+            <ul>
+            <li><b><i>Display:</i></b> 2560 x 1440 x 144 hertz</li>
+            <li><b><i>Ram:</i></b> 32 GB</li>
+            <li><b><i>Storage:</i></b> 2 TB SSD x 2</li>
+            <li><b><i>Processor:</i></b> </li> 
+            <li><b><i>GPU:</i></b> NVIDIA® GeForce RTX™ 3060</li>
+            <li><b><i>Audio (IEMS):</i></b> Fanmusic TRUTHEAR x Crinacle Zero</li>
+            <li><b><i>Keyboard:</i></b>Womier K87</li>
+            <li><b><i>Mouse:</i></b> PRO X SUPERLIGHT 2 DEX </li>
+            </ul>
             <p><em><b><i><u>My Laptop Specs (ROG Strix):</u></i></b></em></p>
-                <li><b><i>Display:</b><i> 1920 x 1200 x 60 hertz
-                <li><b><i>Ram:</b><i> 64 GB</li>
-                <li><b><i>Storage:</b><i> 4 TB SSD</li>
-                <li><b><i>Processor:</b><i> 3th Gen Intel(R) Core(TM) i7-13650HX</li> 
-                <li><b><i>GPU:</b><i> NVIDIA® GeForce RTX™ 4060</li>
+            <ul>
+                <li><b><i>Display:</i></b> 1920 x 1200 x 60 hertz</li>
+                <li><b><i>Ram:</i></b> 64 GB</li>
+                <li><b><i>Storage:</i></b> 4 TB SSD</li>
+                <li><b><i>Processor:</i></b> 3th Gen Intel(R) Core(TM) i7-13650HX</li> 
+                <li><b><i>GPU:</i></b> NVIDIA® GeForce RTX™ 4060</li>
+            </ul>
         </section>
         <section id="about">
             <h2>About</h2>
@@ -254,8 +255,8 @@
                 Fun fact: I have spent thousands of hours in various shooting ranges, playgrounds, aimtrainers, or "free play" areas to practice my aim and reflexes.
             </p>
             <figure>
-                <img src="images/portrait.jpg" alt="something">
-                <figcaption>A portrait session setup.</figcaption>
+                <img src="images/vita.png" alt="psvita" class="larger-image">
+                <figcaption>Me getting my Psvita in 2013</figcaption>
             </figure>
         </section>
         <section id="reviews-ratings">
@@ -298,6 +299,7 @@
             </div>
         </section>
         <section id="peak-comp-rankings-achievements">
+            <h2>Peak Comp Rankings & 100% Games</h2>
             <table>
                 <thead>
                     <tr>
@@ -362,13 +364,10 @@
             </figure>
         </section>
     </main>
-    <footer>
-    </footer>
-    </footer>
     <script>
         function showSection(sectionId) {
             const sections = document.querySelectorAll("main section");
-            sections.forEach(section => section.classList.remove("active"));
+            sections.forEach((section) => section.classList.remove("active"));
             document.getElementById(sectionId).classList.add("active");
         }
     </script>
