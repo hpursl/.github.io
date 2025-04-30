@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #077720;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #077720;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h3 a {
+    text-decoration: none;
+    color: #0e00d7;
+    transition: color 0.3s ease;
+}
+
+section h3 a:hover {
+    color: #005bb5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Navigation Bar */
+nav {
+    background-color: #077727;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1f1f1;
+}
+</style>
+<nav>
+    <ul>
+        <li><a href="/itis3135/index.html">Home</a></li>
+    </ul>
+</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Evaluations</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Website Evaluations</h2>
+        <section>
+            <h3><a href="https://www.apple.com" target="_blank">Apple</a></h3>
+            <p>Apple's website is sleek, modern, and user-friendly.</p>
+            <ul>
+                <li><strong>Contrast:</strong> Excellent use of contrasting colors and typography to highlight key elements.</li>
+                <li><strong>Repetition:</strong> Consistent branding and design elements across pages.</li>
+                <li><strong>Alignment:</strong> Perfectly aligned content for a clean and organized look.</li>
+                <li><strong>Proximity:</strong> Related elements are grouped logically, enhancing usability.</li>
+            </ul>
+        </section>
+        <section>
+            <h3><a href="http://art.yale.edu/" target="_blank">Yale School of Art</a></h3>
+            <p>The Yale School of Art website is chaotic and overwhelming.</p>
+            <ul>
+                <li><strong>Contrast:</strong> Poor contrast makes it hard to distinguish elements.</li>
+                <li><strong>Repetition:</strong> Inconsistent design elements create confusion.</li>
+                <li><strong>Alignment:</strong> Misaligned content disrupts the visual flow.</li>
+                <li><strong>Proximity:</strong> Elements are scattered, making navigation difficult.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
